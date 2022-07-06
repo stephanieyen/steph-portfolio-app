@@ -4,6 +4,11 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+#container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 #nav-bar {
     background-color: white;
     position: fixed;
@@ -24,11 +29,6 @@ body {
     padding: 0px 16px;
 }
 
-#container {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 #sypic {
     height: 200px;
 }
@@ -36,6 +36,21 @@ body {
 #top-section {
     text-align: center;
     margin: 64px 0;
+}
+
+.tab {
+    background: none; 
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 32px;
+    opacity: 0.5;
+}
+
+.tab.selected {
+    opacity: 1.0;
 }
 
 h1 {
