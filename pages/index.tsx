@@ -24,7 +24,7 @@ export default function Index() {
 
             <div id="container">
 
-                <div id="nav-bar">
+                <div id="nav-bar" className="bg-white">
                     <Link href="/about"><span>About</span></Link>
                     
                     <span>Portfolio</span>
@@ -33,7 +33,7 @@ export default function Index() {
 
                 <div id="top-section">
                     <img src="/sypic.jpeg" id="sypic"/>
-                    <h1>Hi!<br/>I'm Stephanie.</h1>
+                    <h1 className="font-semibold">Hi!<br/>I'm Stephanie.</h1>
                 </div>
 
                 <button className={(tab === "about") ? "tab selected" : "tab"} onClick={() => setTab("about")}>About</button>
@@ -53,7 +53,7 @@ export default function Index() {
                     </p>
                 )}
 
-                <div id="personal-summary">
+                <div id="personal-summary" className="leading-normal">
                     <p>
                         <b>I am an undergraduate at Princeton University, from Cleveland, Ohio.</b> I am an aspiring software engineer, product manager, entrepreneur, venture capitalist, writer... who knows yet? — at the end of the day, I strive to make positive and nuanced impact.
                     </p>
@@ -78,7 +78,7 @@ export default function Index() {
 
                 <hr />
 
-                <div className="projects-summary">
+                {/* <div className="projects-summary">
                     <p>Some apps I've built</p>
                     <input type="text" value={search} onChange={e => setSearch(e.target.value)}/>
                     {filteredProjects.map(d => (
@@ -88,7 +88,7 @@ export default function Index() {
                             tag={d.tag}
                         />
                     ))}
-                </div>
+                </div> */}
                 
             </div>
 
