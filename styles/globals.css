@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 body {
-    padding: 0;
-    margin: 0;
-    /* font-family: "Inter", sans-serif; */
     font-family: 'Roboto Slab', serif;
 }
 
@@ -14,32 +11,12 @@ body {
     margin: 0 auto;
 }
 
-#nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-    width: 100%;
-    height: 64px;
-    line-height: 64px; 
-    
-    z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-}
+/* Nav bar */
 
 #nav-bar span {
+    line-height: 64px; 
     text-align: center;
     padding: 0px 16px;
-}
-
-#sypic {
-    height: 200px;
-}
-
-#top-section {
-    text-align: center;
-    margin: 64px 0;
 }
 
 /* Tabs */
@@ -59,11 +36,6 @@ body {
     opacity: 1.0;
 }
 
-h1 {
-    font-size: 56px;
-    font-weight: 400;
-    line-height: 72px;
-}
 
 p {
     font-size: 20px;
